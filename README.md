@@ -22,32 +22,45 @@ what about monthly charges?
 
 ## Data Dictionary
 
-|    Variable   |    Meaning       |
-| ------------- | -------------    |
-| gender        | non-null   int64 |
-| Content Cell  | Content Cell     |
+- gender              | non-null  | object 
+     
+- senior_citizen      | non-null  | int64 
+ 
+- partner             | non-null  | object 
+ 
+- dependents          | non-null  | object 
+ 
+- tenure               | non-null | int64  
 
+- phone_service        | non-null | object 
 
-gender                                 7032 non-null   object 
- 5   senior_citizen                         7032 non-null   int64  
- 6   partner                                7032 non-null   object 
- 7   dependents                             7032 non-null   object 
- 8   tenure                                 7032 non-null   int64  
- 9   phone_service                          7032 non-null   object 
- 10  multiple_lines                         7032 non-null   object 
- 11  online_security                        7032 non-null   object 
- 12  online_backup                          7032 non-null   object 
- 13  device_protection                      7032 non-null   object 
- 14  tech_support                           7032 non-null   object 
- 15  streaming_tv                           7032 non-null   object 
- 16  streaming_movies                       7032 non-null   object 
- 17  paperless_billing                      7032 non-null   object 
- 18  monthly_charges                        7032 non-null   float64
- 19  total_charges                          7032 non-null   float64
- 20  churn                                  7032 non-null   object 
- 21  contract_type                          7032 non-null   object 
- 22  internet_service_type                  7032 non-null   object 
- 23  payment_type  
+- multiple_lines       | non-null | object 
+
+- online_security      | non-null | object 
+
+- online_backup        | non-null | object 
+
+- device_protection    | non-null | object 
+
+- tech_support         | non-null | object 
+
+- streaming_tv         | non-null |  object 
+
+- streaming_movies     | non-null |  object 
+
+- paperless_billing    | non-null |  object 
+
+- monthly_charges      | non-null  | float64
+
+- total_charges        | non-null  | float64
+
+- churn                | non-null  | object 
+
+- contract_type        | non-null  | object 
+
+- internet_service_type  | non-null |  object 
+
+- payment_type         | non-null  | object
  
  
 ## Steps to Reproduce
@@ -60,7 +73,7 @@ you should be able to run final repo.
  
 ## The Plan
 
-Wrangle
+### Wrangle
 Modules (acquire.py + prepare.py)
 
 - the acquire.py value will have the code to connedct to the telco database using the main SQL server database for telc_churn as well as a get connecton 
@@ -69,6 +82,27 @@ Modules (acquire.py + prepare.py)
    - converting certain collumns to a correct data type 
    - creat dummy variables for certain functions 
    - do a train validate test split on the data 
-Missing values - in the dataset there are no missing values 
+- Missing values - in the dataset there are no missing values, no further action was taken 
+- Doint data split, spilitting data to train validate and test 
+  -there is a need to stratify the data so in this case we will stratify by "churn"
 
-Explore
+
+### Explore
+
+Here are my Questions I aimed to answer with my exploration and the type of statistical test I did
+  - all of these questions do have a visualization 
+1.
+
+2.
+
+3.
+
+4.
+
+### Modeling
+ My base line prediction is at 73%
+In my modeling portion I did three Classification Models
+Decision Tree 
+Randm Forest 
+K-Nearest-Neighbors 
+I am going to determing the best one over best accuracy
