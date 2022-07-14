@@ -8,10 +8,10 @@ this project will contain information about,
   - compleate project plan  
   
   ## Goal 
-  The Goal of this project is to identify the diffrent attributes causing chun in our company
+  The Goal of this project is to identify the diffrent attributes causing churn. Mainly focus on our senior ctizens and trying to see the diffrent attributes that are causing ou seniors to chrun  
   
   ## Project desription 
-  There are sevral reasons as to why our customers are churning here in this project I will explore the diffrent variables that can cause churn esspecilly variables I was not able to look at in previouse project. We will analize the diffrent variables to find and pin point diffrent reasons for churn, using data exploration, statistical models and ML classification models and end it off buy reviewing my coonclusions and findings. Topt it all off with some recomendations 
+There are sevral reasons as to why our customers are churning here in this project I will explore the diffrent variables that can cause churn esspecilly variables I was not able to look at in previouse project. We will analize the diffrent variables and stick to our main demographic wich is our senior citizens. we will analize the data of our seniors to see diffrnet areas of chun, using data exploration, statistical models and ML classification models and end it off buy reviewing my coonclusions, findings, and recomendations.
  
  ## Initial questions 
  - My First Thoughts
@@ -22,27 +22,35 @@ what about monthly charges?
 
 ## Data Dictionary
 
-- gender              | non-null  | object 
-     
+#### This is the main data used in Exploration
+-------------------------------------------     
 - senior_citizen      | non-null  | int64 
+
+- monthly_charges     | non-null  | float64
+
+- tech_support        | non-null  | object 
+
+- payment_type        | non-null  | object
  
+- churn               | non-null  | object 
+
+#### This is more data that can be further explored 
+---------------------------------------------
 - partner             | non-null  | object 
  
 - dependents          | non-null  | object 
  
-- tenure               | non-null | int64  
+- tenure              | non-null  | int64  
 
-- phone_service        | non-null | object 
+- phone_service       | non-null  | object 
 
-- multiple_lines       | non-null | object 
+- multiple_lines      | non-null  | object 
 
-- online_security      | non-null | object 
+- online_security     | non-null  | object 
 
-- online_backup        | non-null | object 
+- online_backup       | non-null  | object 
 
-- device_protection    | non-null | object 
-
-- tech_support         | non-null | object 
+- device_protection   | non-null  | object 
 
 - streaming_tv         | non-null |  object 
 
@@ -50,18 +58,13 @@ what about monthly charges?
 
 - paperless_billing    | non-null |  object 
 
-- monthly_charges      | non-null  | float64
-
 - total_charges        | non-null  | float64
-
-- churn                | non-null  | object 
 
 - contract_type        | non-null  | object 
 
 - internet_service_type  | non-null |  object 
 
-- payment_type         | non-null  | object
- 
+ - gender              | non-null  | object 
  
 ## Steps to Reproduce
 
@@ -112,3 +115,6 @@ Decision Tree
 Randm Forest 
 K-Nearest-Neighbors 
 I am going to determing the best one over best accuracy
+These models are all evaluated on train, validate and only the best model which is random forest was tested on test data set.
+
+
