@@ -90,16 +90,22 @@ Modules (acquire.py + prepare.py)
 ### Explore
 
 Here are my Questions I aimed to answer with my exploration and the type of statistical test I did
+
   - all of these questions do have a visualization 
-1.
+  
+1.Question 1 Are certain payment types indicators of churn?
+  - is there a ceratin age group that uses electronic checks ?
 
-2.
+2.Question 2 -Are our senior citizen more likely to churn than non seniors ? 
 
-3.
 
-4.
+3.Do people who churn have higher monthly charges?
+ - how are our senior citizens doing on monthly charges?
 
-### Modeling
+4.Question 4 -is someone with tech support more likely to churn?
+ -  are seniors mostly using tech support ?
+ 
+ ### Modeling
  My base line prediction is at 73%
 In my modeling portion I did three Classification Models
 Decision Tree 
