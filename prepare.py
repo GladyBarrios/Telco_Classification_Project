@@ -44,7 +44,7 @@ def prep_telco_data(df):
      
     return df
 
-
+#these are two diffrent functions the one that i will use is def split 
 
 def train_validate_test_split():
     '''
@@ -58,6 +58,21 @@ def train_validate_test_split():
                                    random_state=123, 
                                    stratify=train_validate.churn)
     return train, validate, test
+
+
+def split_telco_data(df):
+    '''
+    This function performs split on telco data, stratify churn.
+    Returns train, validate, and test dfs.
+    '''
+    train_validate, test = train_test_split(df, test_size=.2, 
+                                        random_state=123, 
+                                        stratify=df.churn)
+    train, validate = train_test_split(train_validate, test_size=.2, 
+                                   random_state=123, 
+                                   stratify=train_validate.churn)
+    return train, validate, test
+
 
 
 def split(df, stratify_by=None):
