@@ -117,4 +117,12 @@ K-Nearest-Neighbors
 I am going to determing the best one over best accuracy
 These models are all evaluated on train, validate and only the best model which is random forest was tested on test data set.
 
+### Conclusion 
+- One of the biggest indicators of chrun are our electronic payment method learning from charts the majority of seniors use this type of payment method  
+- Overall about half of our senior customers are more likely to churn partly due to the fact that they are paying much more in mothly charges on average than our non seniors
 
+- Our non seniors are much MORE likely to churn due to high monthly charges than our seniors
+
+- We can see that many of our customer who churn, do not use our tech support services, especially our seniors
+
+- the best clasification model turned out to be random forest with the best accuracy 
